@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "login-two",
+      "public": "dist/login-two",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

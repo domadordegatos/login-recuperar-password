@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "formulario-179af": {
+      "hosting": {
+        "login-two": [
+          "formulario-179af"
+        ]
+      }
+    }
+  }
+}
