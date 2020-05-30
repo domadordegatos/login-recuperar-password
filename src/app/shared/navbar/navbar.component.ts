@@ -1,33 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/auth/services/auth.service';
+import { Observable } from 'rxjs';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/auth/services/auth.service';
+import { User } from '../models/user.interface';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
-  providers:[AuthService]
 })
-export class NavbarComponent implements OnInit {
-  public isLogged = false;
-  public user: any;
-  constructor(public authSvc: AuthService, private router:Router) { }
+export class NavbarComponent {
+  public user$: Observable<any> = this.authSvc.afAuth.user;
 
-  async ngOnInit(){
-    console.log('nav');
-     this.user = await this.authSvc.getCurrentUser();
-    if(this.user){
-      this.isLogged = true; 
-    }
-  }
+  constructor(public authSvc: AuthService, private router: Router) {}
 
-  async logout(){
-    try{
+  async onLogout() {
+    try {
       await this.authSvc.logOut();
       this.router.navigate(['/login']);
-    }
-    catch(error){
-      console.log('error=>',error);
+    } catch (error) {
+      console.log(error);
     }
   }
 }
