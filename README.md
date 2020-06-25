@@ -1,27 +1,28 @@
-# LoginTwo
+# login con firebase
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+Aplicativo web para logearse con cuentas google, recuperar y verificar cuentas
 
-## Development server
+  - Angular
+  - Firebase
+  - HTML
+  - Bootstrap
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Funcionalidades!
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  - Login con google-Firebase
+  - Recuperar contraseña de la cuenta
+  - Verificar cuenta
+  - Cargar multiples imagenes a Storage de Firebase
+  - Registro de usuarios
+  - Verificacion por Rol
+  - Negaciones de acceso
+  
+# Screenshots
+<div style="display="flex">
+<img width="300px" src="https://firebasestorage.googleapis.com/v0/b/formulario-179af.appspot.com/o/repositories%2F3a.PNG?alt=media&token=081ef176-2100-4da8-bb61-0e951363cce7" alt="My cool logo"/>
+<img width="300px" src="https://firebasestorage.googleapis.com/v0/b/formulario-179af.appspot.com/o/repositories%2F3b.PNG?alt=media&token=2319e5a4-6bc3-4a71-b07b-b692ea47f52b" alt="My cool logo"/>
+<img width="300px" src="https://firebasestorage.googleapis.com/v0/b/formulario-179af.appspot.com/o/repositories%2F3c.PNG?alt=media&token=189da721-41c0-42b4-a812-94e6f53a466c" alt="My cool logo"/>
+<img width="300px" src="https://firebasestorage.googleapis.com/v0/b/formulario-179af.appspot.com/o/repositories%2F3d.PNG?alt=media&token=61248e09-6e9c-429e-8359-1931eaa19c00" alt="My cool logo"/>
+<img width="300px" src="https://firebasestorage.googleapis.com/v0/b/formulario-179af.appspot.com/o/repositories%2F3e.PNG?alt=media&token=0ba4ec5a-5703-41c9-8084-20bfbb54b4f27" alt="My cool logo"/>
+<img width="300px" src="https://firebasestorage.googleapis.com/v0/b/formulario-179af.appspot.com/o/repositories%2F3f.PNG?alt=media&token=c470053f-60a9-498d-943f-22dbf4b09b6c" alt="My cool logo"/>
+</div>
