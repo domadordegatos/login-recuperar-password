@@ -9,7 +9,9 @@ const routes: Routes = [
  { path: 'login', loadChildren: () => import('./auth/login/login.module').then(m => m.LoginModule) },
  { path: 'register', loadChildren: () => import('./auth/register/register.module').then(m => m.RegisterModule) },
  { path: 'verification-email', component: SendEmailComponent, },
- { path: 'forgot-password', loadChildren: () => import('./auth/forgot-password/forgot-password.module').then(m => m.ForgotPasswordModule) }
+ { path: 'forgot-password', loadChildren: () => import('./auth/forgot-password/forgot-password.module').then(m => m.ForgotPasswordModule) },
+ { path: 'upload-image', loadChildren: () => import('./shared/upload-image/upload-image.module').then(m => m.UploadImageModule)/* ,
+ canActivate: [CanAdminGuard] */ }
 ];
 
 @NgModule({

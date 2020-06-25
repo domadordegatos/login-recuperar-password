@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
         
         this.router.navigate(['/home']);
       }else if(user){
-        this.router.navigate(['/verication-email']);
+        this.router.navigate(['/verification-email']);
       }else{
         this.router.navigate(['/register']);
       }
